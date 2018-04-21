@@ -9,6 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var buttonCount = 0
+    
+    @IBOutlet weak var myLabel: UILabel!
+    
+    
+    @IBAction func buttonTap(_ sender: Any) { view.backgroundColor = UIColor.red
+        buttonCount = buttonCount + 1
+        print(buttonCount)
+        
+        if buttonCount >= 10 { view.backgroundColor = UIColor.blue}
+        
+        if buttonCount >= 15 { view.backgroundColor = UIColor.green}
+        
+        myLabel.text = "Hit me 10 times!!! Yay!"
+        
+    }
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
