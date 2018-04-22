@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myLabel: UILabel!
     
+    @IBOutlet weak var topTextField: UITextField!
+    
+    @IBOutlet weak var bottomTextField: UITextField!
+    
     
     @IBAction func buttonTap(_ sender: Any) { view.backgroundColor = UIColor.red
         buttonCount += 1
