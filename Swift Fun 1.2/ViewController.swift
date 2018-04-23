@@ -18,21 +18,42 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var bottomTextField: UITextField!
     
+    // Action button section below
     
-    @IBAction func buttonTap(_ sender: Any) { view.backgroundColor = UIColor.red
-        buttonCount += 1
-        print(buttonCount)
+   
+    
+    @IBOutlet weak var additionSwitch: UISwitch!
+    
+    
+    
+    
+    
+    @IBAction func buttonTap(_ sender: Any) {
         
-        if buttonCount >= 10 { view.backgroundColor = UIColor.blue}
         
-        if buttonCount >= 15 { view.backgroundColor = UIColor.green}
         
-        myLabel.text = "Hit me 10 times!!! Yay!"
+        let addition = additionSwitch.isOn
         
+        if addition {
+            let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+            myLabel.text = "\(topTextField.text!)! + \(bottomTextField.text!)! = \(sum)"
+        } else {
+            let sum = Double(topTextField.text!)! - Double(bottomTextField.text!)!
+            myLabel.text = "\(topTextField.text!)! - \(bottomTextField.text!)! = \(sum)"
+        }
+        
+        
+        
+        
+        
+
+        
+        
+    print(topTextField.text!)
+        print(bottomTextField.text!)
     }
     
-    
-    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()

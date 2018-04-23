@@ -72,6 +72,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2j-NZ-lSP">
+                                <rect key="frame" x="163" y="162" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -86,6 +89,8 @@
                             <constraint firstItem="EAe-Ds-PvT" firstAttribute="top" secondItem="OWY-0N-KcZ" secondAttribute="bottom" constant="37.5" id="MH6-de-JQ3"/>
                             <constraint firstItem="WW0-Ju-pTn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QXd-3R-JYe"/>
                             <constraint firstItem="v8j-Wx-0NQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wcx-Vv-3yA"/>
+                            <constraint firstItem="Dfh-kk-q0Z" firstAttribute="top" secondItem="h2j-NZ-lSP" secondAttribute="bottom" constant="85" id="eXM-Pl-ncb"/>
+                            <constraint firstItem="h2j-NZ-lSP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iyq-nD-Sij"/>
                             <constraint firstItem="Dfh-kk-q0Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mOY-Hl-f7S"/>
                             <constraint firstItem="OWY-0N-KcZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ol3-mz-KsH"/>
                             <constraint firstItem="OWY-0N-KcZ" firstAttribute="top" secondItem="v8j-Wx-0NQ" secondAttribute="bottom" constant="27.5" id="sr2-lE-0kY"/>
@@ -94,6 +99,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="h2j-NZ-lSP" id="4Z3-AQ-1T6"/>
                         <outlet property="bottomTextField" destination="v8j-Wx-0NQ" id="02A-mR-IO3"/>
                         <outlet property="myLabel" destination="OWY-0N-KcZ" id="5pX-1H-xUq"/>
                         <outlet property="topTextField" destination="Dfh-kk-q0Z" id="Bl7-aT-Gmc"/>
